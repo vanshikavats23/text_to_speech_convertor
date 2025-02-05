@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">← Home</a>
+
+        <div class="headings-container">
+            <h1>Text to Speech Converter</h1>
+            <p>Enter text and select a voice.</p>
+        </div>
+
+        <textarea id="text-input" class="text-control" placeholder="Type something..."></textarea>
+
+        <!-- Language Selection -->
+        <label for="language-select">Select Language:</label>
+        <select id="language-select" class="text-control">
+            <option value="en-US">English (US)</option>
+            <option value="en-GB">English (UK)</option>
+            <option value="es-ES">Spanish</option>
+            <option value="fr-FR">French</option>
+            <option value="de-DE">German</option>
+            <option value="hi-IN">Hindi</option>
+        </select>
+
+        <!-- Voice Selection (Male/Female) -->
+        <label for="voice-select">Select Voice:</label>
+        <select id="voice-select" class="text-control"></select>
+
+        <!-- Speech Wave Animation -->
+        <div class="speech-wave" id="wave">
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-container">
+            <button id="speak-btn" class="btn">
+                <i class="fas fa-play"></i> Play
+            </button>
+            <button id="stop-btn" class="btn stop">
+                <i class="fas fa-stop"></i> Stop
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
